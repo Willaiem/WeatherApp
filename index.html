@@ -14,12 +14,17 @@
       type="text/css"
     />
 
-    <script src="./src/index.js" defer=""></script>
+    <script type="module" src="./src/index.js" defer=""></script>
+    <script type="module" src="./src/setAppLayout.js" defer=""></script>
+    <script type="module" src="./src/dataJsonInfo.js" defer=""></script>
     <title>Wheater app</title>
   </head>
   <body>
     <main class="main-container-box">
-      <div class="main-content-box">
+      <div class="label-container">
+        <p id="label-box">write city name here !</p>
+      </div>
+      <div id="m-c-b" class="main-content-box">
         <header>
           <input
             class="search-item"
