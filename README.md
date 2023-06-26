@@ -3,6 +3,9 @@
 Hi there ! This app was created becuse in my head show new idea, that training my skills in JavaScript and BackEnd API.
 Is it simple app, where you can check the weather in your city !!!
 
+# New version 
+26.06.2023 - Was changed files menagment, code in JavaScript and layout a few section on the website.
+
 # Technologies:
 - JavaScript
 - HTML
@@ -14,5 +17,8 @@ Is it simple app, where you can check the weather in your city !!!
 
 # Link to the LIVE Website:
 https://gabrli.github.io/WeatherApp/
+
+# Made by:
+https://gabrieldeveloper.gabrys564.repl.co/
 
 
