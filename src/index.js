@@ -15,9 +15,14 @@ let inputSearchValue = document.querySelector("#input-search").value;
 async function checkDataWheater(city) {
   if (city === "") {
     searchInputElement.classList.add("search-error");
+    alert("City not found !");
   } else {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
-    var data = await response.json();
+    let data = await response.json();
+
+    if (!data.main) {
+      alert("City not found !");
+    }
     ActiveElement();
 
     tempCity.innerHTML =
