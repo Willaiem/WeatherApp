@@ -21,7 +21,7 @@ async function checkDataWheater(city) {
     let data = await response.json();
 
     if (!data.main) {
-      alert("City not found !");
+      alert("City not found !!");
     }
     ActiveElement();
 
