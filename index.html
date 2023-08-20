@@ -1,56 +1,44 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/index.css" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      type="text/css"
-    />
+<!doctype html>
+<html lang="en">
 
-    <script type="module" src="./src/index.js" defer=""></script>
-    <script type="module" src="./src/setAppLayout.js" defer=""></script>
-    <script type="module" src="./src/dataJsonInfo.js" defer=""></script>
-    <title>Weather app</title>
-  </head>
-  <body>
-    <main class="main-container-box">
-      <div class="label-container">
-        <p id="label-box">write city name here !</p>
-      </div>
-      <div id="m-c-b" class="main-content-box">
-        <header>
-          <input
-            class="search-item"
-            id="input-search"
-            type="text"
-            value=""
-            placeholder="City name"
-          />
-          <button class="search-item" id="btn-serach">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </header>
-        <section class="image-info">
-          <img class="img-info" src="./img/sun.png" alt="" />
-        </section>
-        <section class="text-info-box">
-          <h3 id="temp-city">0 <i class="fa-solid fa-temperature-low"></i></h3>
-        </section>
-        <section class="descryption-weather-box">
-          <p id="weather-city-info"></p>
-        </section>
-        <section class="more-weather-info-box">
-          <p id="wind"><i class="fa-solid fa-wind"></i></p>
-          <p id="hum"><i class="fa-sharp fa-solid fa-droplet"></i></p>
-        </section>
-      </div>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    type="text/css" />
+  <title>Weather app</title>
+</head>
+
+<body>
+  <main class="main-container-box">
+    <div class="label-container">
+      <p id="label-box">write city name here !</p>
+    </div>
+    <div id="m-c-b" class="main-content-box">
+      <header>
+        <input class="search-item" id="input-search" type="text" value="" placeholder="City name" />
+        <button class="search-item" id="btn-serach">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </header>
+      <section class="image-info">
+        <img class="img-info" src="./img/sun.png" alt="" />
+      </section>
+      <section class="text-info-box">
+        <h3 id="temp-city">0 <i class="fa-solid fa-temperature-low"></i></h3>
+      </section>
+      <section class="descryption-weather-box">
+        <p id="weather-city-info"></p>
+      </section>
+      <section class="more-weather-info-box">
+        <p id="wind"><i class="fa-solid fa-wind"></i></p>
+        <p id="hum"><i class="fa-sharp fa-solid fa-droplet"></i></p>
+      </section>
+    </div>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
