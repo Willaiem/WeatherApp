@@ -17,12 +17,15 @@
       <p id="label-box">write city name here !</p>
     </div>
     <div id="m-c-b" class="main-content-box">
+      <div class="error-message" id="error-message"></div>
       <header>
-        <input class="search-item" id="input-search" type="text" value="" placeholder="City name" />
-        <button class="search-item" id="btn-serach">
+        <input class="search-item" id="input-search" type="text" value="" placeholder="Search the city"
+          aria-label="Search the city" required min="1" />
+        <button class="search-item" id="btn-search" aria-label="Search the city">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </header>
+
       <section class="image-info">
         <img class="img-info" src="./img/sun.png" alt="" />
       </section>
@@ -36,6 +39,8 @@
         <p id="wind"><i class="fa-solid fa-wind"></i></p>
         <p id="hum"><i class="fa-sharp fa-solid fa-droplet"></i></p>
       </section>
+
+
     </div>
   </main>
   <script type="module" src="/src/main.ts"></script>
